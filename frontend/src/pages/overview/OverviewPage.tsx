@@ -216,26 +216,26 @@ export function OverviewPage() {
       {/* Standalone Landing Minimal Navigation (No Sidebar Overhead) */}
       <header className="sticky top-0 z-30 backdrop-blur-md bg-[var(--bg-canvas)]/90 border-b border-[var(--border-hairline)]">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-8 h-16 flex items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <span className="font-serif text-xl tracking-tight">PropIntel</span>
-            <span className="hidden sm:inline-block tech-label px-2 py-0.5 border border-[var(--border-hairline)] bg-[var(--bg-surface)]">
+          <div className="flex items-center gap-3 shrink-0">
+            <span className="font-serif text-xl tracking-tight whitespace-nowrap">PropIntel</span>
+            <span className="hidden lg:inline-block tech-label whitespace-nowrap px-2 py-0.5 border border-[var(--border-hairline)] bg-[var(--bg-surface)]">
               SPATIAL VALUATION STUDIO
             </span>
           </div>
 
-          <nav className="hidden md:flex items-center gap-6 font-mono text-[11px] uppercase tracking-wider text-[var(--text-secondary)]">
+          <nav className="hidden md:flex items-center gap-5 font-mono text-[11px] uppercase tracking-wider text-[var(--text-secondary)] whitespace-nowrap">
             <a href="#pipeline" className="hover:text-[var(--text-primary)] transition-colors">Architecture</a>
             <a href="#parameters" className="hover:text-[var(--text-primary)] transition-colors">Parameters</a>
             <a href="#methodologies" className="hover:text-[var(--text-primary)] transition-colors">Valuation Math</a>
             <a href="#corridors" className="hover:text-[var(--text-primary)] transition-colors">Benchmarks</a>
           </nav>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 shrink-0">
             <button
               type="button"
               onClick={toggleTheme}
               aria-label="Toggle theme"
-              className="arch-btn px-2.5 py-1.5 border border-[var(--border-strong)] bg-[var(--bg-surface)] font-mono text-[11px] flex items-center gap-1.5"
+              className="arch-btn whitespace-nowrap px-2.5 py-1.5 border border-[var(--border-strong)] bg-[var(--bg-surface)] font-mono text-[11px] flex items-center gap-1.5"
             >
               {theme === 'obsidian' ? <SunMedium className="w-3.5 h-3.5" /> : <Moon className="w-3.5 h-3.5" />}
               <span className="hidden sm:inline">{theme === 'obsidian' ? 'Stone' : 'Obsidian'}</span>
@@ -243,7 +243,7 @@ export function OverviewPage() {
             <button
               type="button"
               onClick={() => setRoute('valuation')}
-              className="arch-btn px-4 py-1.5 font-mono text-xs font-semibold flex items-center gap-1.5"
+              className="arch-btn whitespace-nowrap px-4 py-1.5 font-mono text-xs font-semibold flex items-center gap-1.5"
               style={{ backgroundColor: 'var(--accent-copper)', color: 'var(--accent-copper-ink)' }}
             >
               <span>Enter Main Website</span>
@@ -508,7 +508,7 @@ export function OverviewPage() {
             <Panel className="p-5 overflow-x-auto space-y-3">
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <div className="text-xs text-[var(--text-secondary)]">
-                  Champion gradient-boosted ensembles evaluated via <strong>Spatially Separated Geographic Holdout</strong> (`log1p(price)`).
+                  Champion gradient-boosted ensembles evaluated via <strong>Spatially Separated Geographic Holdout</strong> (<code className="font-mono text-[11px] text-[var(--text-primary)]">log1p(price)</code>).
                 </div>
                 <StatusTag tone="verified">SHAP LOG-SPACE EXPLAINABLE</StatusTag>
               </div>
