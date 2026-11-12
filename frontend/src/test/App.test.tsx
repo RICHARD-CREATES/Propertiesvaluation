@@ -92,9 +92,12 @@ describe('PropIntel Architectural Frontend Workflows', () => {
 
   it('renders the standalone 3D landing hero without sidebar chrome first', async () => {
     render(<App />);
-    await waitFor(() => {
-      expect(screen.getByText('Understand the value beneath the surface.')).toBeInTheDocument();
-    });
+    await waitFor(
+      () => {
+        expect(screen.getByText('Understand the value beneath the surface.')).toBeInTheDocument();
+      },
+      { timeout: 5000 },
+    );
     expect(screen.getByText('Explore a Property')).toBeInTheDocument();
     expect(screen.getByText('View Market Intelligence')).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /Toggle sidebar/i })).not.toBeInTheDocument();

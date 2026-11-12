@@ -42,7 +42,6 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   const coreNav = WORKSPACE_NAV.filter((n) => n.section === 'core');
   const adminNav = WORKSPACE_NAV.filter((n) => n.section === 'admin');
 
-  const activeId = valuationResult?.valuation_id || `PIN-${location.latitude.toFixed(2)}N-${location.longitude.toFixed(2)}E`;
   const activeLocality = valuationResult?.location_summary?.locality || zoneResponse?.city || location.displayAddress;
 
   const selectRoute = (id: WorkspaceRoute) => {
@@ -106,8 +105,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <div className="p-2.5 border-t border-[var(--border-hairline)] space-y-2 text-[10px] font-mono text-[var(--text-muted)]">
           {!collapsed && (
             <div className="space-y-0.5 px-1">
-              <div className="text-[var(--text-primary)] truncate">{activeId}</div>
-              <div className="truncate">{activeLocality}</div>
+              <div className="text-[var(--text-primary)] truncate">{activeLocality}</div>
               <div className="truncate">{adminActor ? `${adminActor.id}` : 'Analyst Session'}</div>
             </div>
           )}
@@ -135,7 +133,6 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             {mobileMenuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
           </button>
           <span className="font-serif text-base">PropIntel</span>
-          <span className="font-mono text-[10px] text-[var(--text-muted)] truncate">{activeId}</span>
         </div>
         <button
           type="button"

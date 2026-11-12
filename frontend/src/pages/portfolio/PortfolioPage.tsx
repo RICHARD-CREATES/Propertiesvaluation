@@ -34,7 +34,7 @@ export function PortfolioPage() {
               className="arch-btn px-4 py-2 font-mono text-xs font-semibold"
               style={{ backgroundColor: 'var(--accent-copper)', color: 'var(--accent-copper-ink)' }}
             >
-              + Add Active Appraisal ({valuationResult.valuation_id})
+              + Add Active Appraisal
             </button>
           )
         }
