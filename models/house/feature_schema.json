@@ -1,0 +1,19 @@
+{
+  "category": "house",
+  "target": "price_inr",
+  "target_transformation": "log1p(price_inr)",
+  "num_features": [
+    "latitude",
+    "longitude",
+    "area_sqft",
+    "plot_area_sqft",
+    "bedrooms",
+    "bathrooms",
+    "property_age_years"
+  ],
+  "cat_features": [
+    "state",
+    "construction_grade"
+  ],
+  "total_feature_count": 9
+}

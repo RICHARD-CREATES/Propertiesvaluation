@@ -1,0 +1,15 @@
+{
+  "category": "rental",
+  "target": "price_inr",
+  "target_transformation": "log1p(price_inr)",
+  "num_features": [
+    "latitude",
+    "longitude",
+    "area_sqft",
+    "gross_rental_yield_pct"
+  ],
+  "cat_features": [
+    "state"
+  ],
+  "total_feature_count": 5
+}

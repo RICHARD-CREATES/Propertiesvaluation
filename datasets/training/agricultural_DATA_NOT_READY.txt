@@ -1,0 +1,2 @@
+STATUS: DATA NOT READY
+REASON: Insufficient verified agricultural deed transactions on disk.

@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "created_at": "2026-11-10T22:20:25.166273",
+  "datasets": {
+    "apartment": "datasets/training/apartments.parquet",
+    "house": "datasets/training/houses.parquet",
+    "residential_land": "datasets/training/residential_land.parquet",
+    "commercial": "datasets/training/commercial.parquet",
+    "rental": "datasets/training/rental.parquet"
+  },
+  "governance": "All datasets derived from genuine Pan-India registry hubs, BMV benchmark rates, and CPWD indices."
+}

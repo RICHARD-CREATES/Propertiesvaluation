@@ -1,0 +1,20 @@
+{
+  "category": "apartment",
+  "target": "price_inr",
+  "target_transformation": "log1p(price_inr)",
+  "num_features": [
+    "latitude",
+    "longitude",
+    "area_sqft",
+    "bedrooms",
+    "bathrooms",
+    "floor_number",
+    "total_floors",
+    "property_age_years"
+  ],
+  "cat_features": [
+    "state",
+    "construction_grade"
+  ],
+  "total_feature_count": 10
+}

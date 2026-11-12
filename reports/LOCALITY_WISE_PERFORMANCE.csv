@@ -1,0 +1,136 @@
+property_category,locality_city,sample_count,mae_inr,medape_pct
+apartment,Andheri East / JVLR,12,23847049.49,83.04
+apartment,BKC (Bandra Kurla),12,59340655.91,92.39
+apartment,Bandra West,12,68542701.99,93.34
+apartment,Bhubaneswar (General City Average),12,2233595.02,25.75
+apartment,Bhubaneswar (Jayadev Vihar / Nayapalli),12,5125666.69,44.74
+apartment,Bhubaneswar (Old Town / Master Canteen),12,2365052.94,26.89
+apartment,Bhubaneswar (Patia / Infocity / KIIT),12,4074004.27,39.07
+apartment,Bhubaneswar (VSS Nagar / Saheed Nagar),12,4599835.52,42.05
+apartment,Chhatrapati Sambhajinagar,12,815027.46,14.47
+apartment,Cuttack,12,658476.65,13.15
+apartment,Hinjawadi IT Park / Wakad,12,7990065.02,64.07
+apartment,Kanjurmarg / Vikhroli,12,17931448.24,78.68
+apartment,Kolhapur,12,651022.33,12.76
+apartment,Malad / Goregaon,12,20560604.49,80.87
+apartment,Mumbai,12,97463418.41,95.22
+apartment,Nagpur,12,1431944.74,18.46
+apartment,Nashik,12,1811548.19,28.9
+apartment,Navi Mumbai (Vashi),12,15302292.41,75.93
+apartment,Panaji / North Goa,12,8813939.33,61.05
+apartment,Panvel / Kharghar,12,6675487.02,59.85
+apartment,Powai / IIT Bombay,12,29105361.49,85.65
+apartment,Pune Central,12,14562955.1,76.46
+apartment,Puri,12,1184307.81,25.06
+apartment,Ranchi,12,1536536.65,25.86
+apartment,Rourkela,12,1580128.43,33.25
+apartment,South Mumbai (Malabar Hill),12,106358927.06,95.35
+apartment,Thane City,12,13330425.32,73.35
+house,Andheri East / JVLR,4,37288929.99,69.67
+house,BKC (Bandra Kurla),4,101913929.99,86.39
+house,Bandra West,4,111313929.99,87.4
+house,Bhubaneswar (General City Average),4,797487.8,3.89
+house,Bhubaneswar (Jayadev Vihar / Nayapalli),4,5967487.8,24.54
+house,Bhubaneswar (Old Town / Master Canteen),4,1267487.8,6.2
+house,Bhubaneswar (Patia / Infocity / KIIT),4,4322487.8,18.91
+house,Bhubaneswar (VSS Nagar / Saheed Nagar),4,5027487.8,21.42
+house,Chhatrapati Sambhajinagar,4,624712.91,4.02
+house,Cuttack,4,4137512.2,29.72
+house,Hinjawadi IT Park / Wakad,4,11687856.87,44.67
+house,Kanjurmarg / Vikhroli,4,28720414.65,67.01
+house,Kolhapur,4,1437121.25,13.61
+house,Malad / Goregaon,4,31413929.99,65.85
+house,Mumbai,4,165363929.99,91.17
+house,Nagpur,4,4497911.37,26.94
+house,Nashik,4,1327599.29,7.01
+house,Navi Mumbai (Vashi),4,25195414.65,64.02
+house,Panaji / North Goa,4,14842593.27,50.23
+house,Panvel / Kharghar,4,9807856.87,40.28
+house,Powai / IIT Bombay,4,45513929.99,73.77
+house,Pune Central,4,22732856.87,61.35
+house,Puri,4,5077512.2,38.98
+house,Ranchi,4,2586731.55,18.36
+house,Rourkela,4,6913512.21,56.18
+house,South Mumbai (Malabar Hill),4,177113929.99,91.71
+house,Thane City,4,21670414.65,60.45
+residential_land,Andheri East / JVLR,6,40072721.43,78.06
+residential_land,BKC (Bandra Kurla),6,108978554.76,90.63
+residential_land,Bandra West,6,119001221.43,91.35
+residential_land,Bhubaneswar (General City Average),6,605735.01,3.65
+residential_land,Bhubaneswar (Jayadev Vihar / Nayapalli),6,4978759.38,24.16
+residential_land,Bhubaneswar (Old Town / Master Canteen),6,299396.58,1.36
+residential_land,Bhubaneswar (Patia / Infocity / KIIT),6,3224792.71,17.08
+residential_land,Bhubaneswar (VSS Nagar / Saheed Nagar),6,3976492.71,20.27
+residential_land,Chhatrapati Sambhajinagar,6,1013269.64,10.59
+residential_land,Cuttack,6,5795607.29,59.46
+residential_land,Hinjawadi IT Park / Wakad,6,12344441.81,56.23
+residential_land,Kanjurmarg / Vikhroli,6,30168809.76,75.4
+residential_land,Kolhapur,6,1838284.13,22.63
+residential_land,Malad / Goregaon,6,33808554.76,75.01
+residential_land,Mumbai,6,176631554.76,94.0
+residential_land,Nagpur,6,4053768.04,32.48
+residential_land,Nashik,6,1389338.9,12.95
+residential_land,Navi Mumbai (Vashi),6,26410309.76,72.86
+residential_land,Panaji / North Goa,6,15954236.75,62.47
+residential_land,Panvel / Kharghar,6,10339908.48,51.86
+residential_land,Powai / IIT Bombay,6,48842554.76,81.26
+residential_land,Pune Central,6,24121075.15,71.47
+residential_land,Puri,6,6797873.96,77.68
+residential_land,Ranchi,6,2751388.75,27.16
+residential_land,Rourkela,6,7763127.73,96.99
+residential_land,South Mumbai (Malabar Hill),6,189159888.1,94.38
+residential_land,Thane City,6,22651809.76,69.72
+commercial,Andheri East / JVLR,4,52747420.06,76.53
+commercial,BKC (Bandra Kurla),4,136966348.81,89.46
+commercial,Bandra West,4,158800885.81,90.78
+commercial,Bhubaneswar (General City Average),4,2485764.03,9.42
+commercial,Bhubaneswar (Jayadev Vihar / Nayapalli),4,9348047.28,32.59
+commercial,Bhubaneswar (Old Town / Master Canteen),4,2797686.03,10.81
+commercial,Bhubaneswar (Patia / Infocity / KIIT),4,6852671.53,25.68
+commercial,Bhubaneswar (VSS Nagar / Saheed Nagar),4,8100359.53,29.3
+commercial,Chhatrapati Sambhajinagar,4,771805.06,6.78
+commercial,Cuttack,4,4376518.97,38.03
+commercial,Hinjawadi IT Park / Wakad,4,16655489.31,55.85
+commercial,Kanjurmarg / Vikhroli,4,41467674.75,75.71
+commercial,Kolhapur,4,2225262.52,24.53
+commercial,Malad / Goregaon,4,44949371.31,73.52
+commercial,Mumbai,4,227423716.06,93.38
+commercial,Nagpur,4,5765436.81,32.38
+commercial,Nashik,4,2079556.4,13.3
+commercial,Navi Mumbai (Vashi),4,35229235.75,72.57
+commercial,Panaji / North Goa,4,21316591.24,60.16
+commercial,Panvel / Kharghar,4,13536269.81,50.66
+commercial,Powai / IIT Bombay,4,65224298.31,80.14
+commercial,Pune Central,4,32251587.06,71.07
+commercial,Puri,4,5624206.97,52.56
+commercial,Ranchi,4,2660783.48,22.87
+commercial,Rourkela,4,7408905.38,73.85
+commercial,South Mumbai (Malabar Hill),4,249258253.31,93.93
+commercial,Thane City,4,30550406.5,69.64
+rental,Andheri East / JVLR,3,2859.44,4.27
+rental,BKC (Bandra Kurla),3,76438.77,57.02
+rental,Bandra West,3,95514.77,62.39
+rental,Bhubaneswar (General City Average),3,6731.07,31.44
+rental,Bhubaneswar (Jayadev Vihar / Nayapalli),3,13850.73,48.98
+rental,Bhubaneswar (Old Town / Master Canteen),3,7055.07,32.49
+rental,Bhubaneswar (Patia / Infocity / KIIT),3,11261.73,43.74
+rental,Bhubaneswar (VSS Nagar / Saheed Nagar),3,12556.07,46.49
+rental,Chhatrapati Sambhajinagar,3,318.16,1.53
+rental,Cuttack,3,388.27,4.47
+rental,Hinjawadi IT Park / Wakad,3,17412.59,56.6
+rental,Kanjurmarg / Vikhroli,3,9403.56,20.35
+rental,Kolhapur,3,1850.92,15.64
+rental,Malad / Goregaon,3,3953.56,8.01
+rental,Mumbai,3,155468.1,73.0
+rental,Nagpur,3,5222.44,29.51
+rental,Nashik,3,2202.92,14.11
+rental,Navi Mumbai (Vashi),3,14853.9,35.88
+rental,Panaji / North Goa,3,21449.08,60.05
+rental,Panvel / Kharghar,3,30245.66,134.85
+rental,Powai / IIT Bombay,3,13759.77,19.0
+rental,Pune Central,3,33593.59,71.57
+rental,Puri,3,1682.6,15.48
+rental,Ranchi,3,2874.56,19.82
+rental,Rourkela,3,2459.17,23.53
+rental,South Mumbai (Malabar Hill),3,174241.03,75.22
+rental,Thane City,3,18941.9,50.44

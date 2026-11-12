@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================================
+   RAW ARCHITECTURE + SPATIAL INTELLIGENCE DESIGN TOKENS
+   Restrained Obsidian / Limestone Surfaces · Architectural Grid · Copper Accent
+   ============================================================================ */
+:root {
+  --p-obsidian-950: #0a0c0f;
+  --p-obsidian-900: #111419;
+  --p-obsidian-850: #171b22;
+  --p-obsidian-800: #1e232c;
+  --p-stone-50: #f7f5f0;
+  --p-stone-100: #efeae0;
+  --p-stone-200: #e2dcd0;
+  --p-ink-950: #121417;
+  --p-ink-700: #454b54;
+  --p-copper-500: #c86d3b;
+  --p-copper-400: #d98252;
+  --p-copper-600: #a8562a;
+  --p-zone-green: #22c55e;
+  --ease-architect: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --bg-canvas: var(--p-obsidian-950);
+  --bg-surface: var(--p-obsidian-900);
+  --bg-elevated: var(--p-obsidian-850);
+  --bg-input: #0d1015;
+  --bg-grid-line: rgba(255, 255, 255, 0.035);
+  --border-hairline: rgba(255, 255, 255, 0.09);
+  --border-strong: rgba(255, 255, 255, 0.18);
+  --text-primary: #eceee9;
+  --text-secondary: #9ba3ae;
+  --text-muted: #6e7681;
+  --accent-copper: var(--p-copper-400);
+  --accent-copper-ink: #0a0c0f;
+  --shadow-panel: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 12px 30px -16px rgba(0, 0, 0, 0.6);
+}
+
+html[data-theme='stone'] {
+  --bg-canvas: var(--p-stone-50);
+  --bg-surface: #fcfbf8;
+  --bg-elevated: var(--p-stone-100);
+  --bg-input: #ffffff;
+  --bg-grid-line: rgba(18, 20, 23, 0.045);
+  --border-hairline: rgba(18, 20, 23, 0.11);
+  --border-strong: rgba(18, 20, 23, 0.24);
+  --text-primary: var(--p-ink-950);
+  --text-secondary: var(--p-ink-700);
+  --text-muted: #6b7280;
+  --accent-copper: var(--p-copper-600);
+  --accent-copper-ink: #ffffff;
+  --shadow-panel: 0 1px 0 rgba(255, 255, 255, 0.8) inset, 0 8px 24px -16px rgba(18, 20, 23, 0.14);
+}
+
+html,
+body {
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  overflow-x: clip;
+  max-width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.arch-grid-bg {
+  background-image:
+    linear-gradient(to right, var(--bg-grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--bg-grid-line) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+.panel-surface {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-hairline);
+  border-radius: 3px;
+  box-shadow: var(--shadow-panel);
+}
+
+.panel-elevated {
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--border-hairline);
+  border-radius: 2px;
+}
+
+.tech-label {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.arch-input {
+  width: 100%;
+  background-color: var(--bg-input);
+  color: var(--text-primary);
+  border: 1px solid var(--border-strong);
+  border-radius: 2px;
+  padding: 0.5rem 0.65rem;
+  font-size: 0.8125rem;
+  transition: border-color 180ms var(--ease-architect), box-shadow 180ms var(--ease-architect);
+}
+
+.arch-input:focus-visible {
+  outline: none;
+  border-color: var(--accent-copper);
+  box-shadow: 0 0 0 2px rgba(200, 109, 59, 0.22);
+}
+
+.arch-btn {
+  cursor: pointer;
+  min-height: 36px;
+  border-radius: 2px;
+  transition: background-color 180ms var(--ease-architect), border-color 180ms var(--ease-architect), transform 140ms var(--ease-architect);
+}
+
+.arch-btn:active {
+  transform: translateY(0.5px);
+}
+
+.arch-btn:focus-visible {
+  outline: 2px solid var(--accent-copper);
+  outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(140, 148, 160, 0.3);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

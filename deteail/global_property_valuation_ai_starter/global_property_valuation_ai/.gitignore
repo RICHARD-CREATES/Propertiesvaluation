@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+models/*
+!models/.gitkeep
+reports/*
+!reports/.gitkeep
+*.joblib
+*.cbm

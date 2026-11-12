@@ -1,0 +1,8 @@
+{
+  "mae_inr": 19181202.89,
+  "rmse_inr": 39725532.4,
+  "r2_score": -0.2173,
+  "mape_pct": 54.73,
+  "medape_pct": 59.22,
+  "coverage_within_15pct": 7.41
+}

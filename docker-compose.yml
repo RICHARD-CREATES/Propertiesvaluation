@@ -1,0 +1,16 @@
+services:
+  valuation-platform:
+    build: .
+    container_name: ai-property-valuation-platform
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env.example
+    environment:
+      - PORT=8000
+      - RATE_LIMIT_ENABLED=1
+      - RATE_LIMIT_RPM=180
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models:ro
+    restart: unless-stopped

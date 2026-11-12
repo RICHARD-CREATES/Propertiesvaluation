@@ -1,0 +1,117 @@
+target:
+  sale_price: sale_price
+  currency: currency
+  date: transaction_date
+  country: country_code
+  asset_type: asset_type
+area:
+  built: built_area_sqm
+  land: land_area_sqm
+keys:
+  property_id: property_id
+  latitude: latitude
+  longitude: longitude
+
+# Ten specialist clusters. Add derived features to these lists after feature engineering.
+clusters:
+  transaction:
+    - comparable_sales_count_500m_12m
+    - comparable_median_price_sqm_500m_12m
+    - comparable_median_price_sqm_1km_12m
+    - comparable_price_iqr_1km_12m
+    - days_since_nearest_comparable
+    - transaction_velocity_500m
+    - repeat_sale_return
+  government_cadastre:
+    - parcel_area_sqm
+    - zoning_code
+    - master_plan_zone
+    - fsi_far
+    - title_status_code
+    - rera_project_density_2km
+    - property_tax_assessed_value
+  satellite_built_environment:
+    - building_footprint_area_sqm
+    - building_height_est_m
+    - building_coverage_ratio_250m
+    - built_up_change_3y
+    - vegetation_index_250m
+    - impervious_surface_250m
+    - night_light_intensity
+  geospatial_connectivity:
+    - distance_nh_km
+    - distance_sh_km
+    - distance_metro_km
+    - distance_rail_km
+    - distance_airport_km
+    - distance_cbd_km
+    - road_density_1km
+    - poi_count_1km
+    - amenity_score
+  traffic_mobility:
+    - vehicles_per_minute_peak
+    - vehicles_per_hour_peak
+    - vehicles_per_day
+    - traffic_weekday_weekend_ratio
+    - traffic_monthly_growth
+    - heavy_vehicle_share
+    - pedestrian_count
+    - congestion_index
+    - noise_db_proxy
+    - pollution_pm25
+  population_demographics:
+    - population_density_1km
+    - population_growth_5y
+    - daytime_population
+    - median_income_area
+    - employment_density
+    - household_size_mean
+    - education_access_score
+  market_trends:
+    - local_price_index
+    - local_price_growth_1y
+    - local_price_growth_3y
+    - mortgage_rate
+    - inflation_rate
+    - inventory_months
+    - days_on_market_median
+    - sales_volume_12m
+  physical_property:
+    - built_area_sqm
+    - land_area_sqm
+    - bedrooms
+    - bathrooms
+    - floor_number
+    - total_floors
+    - property_age_years
+    - construction_quality_code
+    - condition_code
+    - parking_spaces
+    - elevator
+    - frontage_m
+    - road_access_type
+  future_development:
+    - announced_infrastructure_distance_km
+    - project_status_code
+    - expected_completion_years
+    - industrial_park_distance_km
+    - sez_distance_km
+    - smart_city_flag
+    - planned_transit_distance_km
+  rental_investment:
+    - monthly_rent
+    - gross_rental_yield
+    - vacancy_rate_area
+    - rent_growth_1y
+    - rent_to_price_ratio
+    - cap_rate_proxy
+categorical:
+  - country_code
+  - asset_type
+  - currency
+  - zoning_code
+  - master_plan_zone
+  - construction_quality_code
+  - condition_code
+  - title_status_code
+  - project_status_code

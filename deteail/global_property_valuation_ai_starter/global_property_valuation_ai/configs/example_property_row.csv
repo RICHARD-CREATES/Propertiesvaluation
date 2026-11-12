@@ -1,0 +1,2 @@
+property_id,country_code,asset_type,currency,transaction_date,sale_price,built_area_sqm,land_area_sqm,latitude,longitude,bedrooms,bathrooms,property_age_years,comparable_sales_count_500m_12m,comparable_median_price_sqm_500m_12m,distance_metro_km,population_density_1km,vehicles_per_hour_peak,local_price_growth_1y
+EXAMPLE_NOT_TRAINING,GB,residential,GBP,2025-01-01,250000,80,,51.5,-0.12,2,1,20,12,3100,0.8,9000,1200,0.04

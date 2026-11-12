@@ -1,0 +1,17 @@
+{
+  "category": "residential_land",
+  "target": "price_inr",
+  "target_transformation": "log1p(price_inr)",
+  "num_features": [
+    "latitude",
+    "longitude",
+    "area_sqft",
+    "plot_area_sqft"
+  ],
+  "cat_features": [
+    "state",
+    "road_width_ft",
+    "corner_plot"
+  ],
+  "total_feature_count": 7
+}

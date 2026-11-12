@@ -1,0 +1,163 @@
+{
+  "training_timestamp": "2026-11-10T22:20:25.166273",
+  "python_version": "3.11.15 (main, Jun 23 2026, 15:20:37) [MSC v.1944 64 bit (AMD64)]",
+  "validation_strategy": "Spatially Separated Geographic Holdout",
+  "target_formulation": "log1p(target_price_inr)",
+  "evaluation_summary": {
+    "apartment": {
+      "champion_algorithm": "XGBoost",
+      "training_samples": 552,
+      "holdout_samples": 324,
+      "metrics": {
+        "mae_inr": 19181202.89,
+        "rmse_inr": 39725532.4,
+        "r2_score": -0.2173,
+        "mape_pct": 54.73,
+        "medape_pct": 59.22,
+        "coverage_within_15pct": 7.41
+      },
+      "comparison": {
+        "CatBoost": {
+          "mae_inr": 18535876.32,
+          "rmse_inr": 39279432.66,
+          "r2_score": -0.1901,
+          "mape_pct": 52.05,
+          "medape_pct": 60.43,
+          "coverage_within_15pct": 17.9
+        },
+        "XGBoost": {
+          "mae_inr": 19181202.89,
+          "rmse_inr": 39725532.4,
+          "r2_score": -0.2173,
+          "mape_pct": 54.73,
+          "medape_pct": 59.22,
+          "coverage_within_15pct": 7.41
+        }
+      }
+    },
+    "house": {
+      "champion_algorithm": "CatBoost",
+      "training_samples": 184,
+      "holdout_samples": 108,
+      "metrics": {
+        "mae_inr": 31428332.21,
+        "rmse_inr": 60297053.75,
+        "r2_score": -0.2854,
+        "mape_pct": 45.74,
+        "medape_pct": 45.07,
+        "coverage_within_15pct": 16.67
+      },
+      "comparison": {
+        "CatBoost": {
+          "mae_inr": 31428332.21,
+          "rmse_inr": 60297053.75,
+          "r2_score": -0.2854,
+          "mape_pct": 45.74,
+          "medape_pct": 45.07,
+          "coverage_within_15pct": 16.67
+        },
+        "XGBoost": {
+          "mae_inr": 32501070.21,
+          "rmse_inr": 61308525.74,
+          "r2_score": -0.3288,
+          "mape_pct": 47.06,
+          "medape_pct": 46.09,
+          "coverage_within_15pct": 19.44
+        }
+      }
+    },
+    "residential_land": {
+      "champion_algorithm": "CatBoost",
+      "training_samples": 276,
+      "holdout_samples": 162,
+      "metrics": {
+        "mae_inr": 33443462.09,
+        "rmse_inr": 67714869.99,
+        "r2_score": -0.2414,
+        "mape_pct": 54.23,
+        "medape_pct": 62.47,
+        "coverage_within_15pct": 13.58
+      },
+      "comparison": {
+        "CatBoost": {
+          "mae_inr": 33443462.09,
+          "rmse_inr": 67714869.99,
+          "r2_score": -0.2414,
+          "mape_pct": 54.23,
+          "medape_pct": 62.47,
+          "coverage_within_15pct": 13.58
+        },
+        "XGBoost": {
+          "mae_inr": 35395988.27,
+          "rmse_inr": 69496176.88,
+          "r2_score": -0.3075,
+          "mape_pct": 56.49,
+          "medape_pct": 64.37,
+          "coverage_within_15pct": 11.11
+        }
+      }
+    },
+    "commercial": {
+      "champion_algorithm": "CatBoost",
+      "training_samples": 184,
+      "holdout_samples": 108,
+      "metrics": {
+        "mae_inr": 43958316.74,
+        "rmse_inr": 100297471.25,
+        "r2_score": -0.1005,
+        "mape_pct": 52.69,
+        "medape_pct": 55.87,
+        "coverage_within_15pct": 12.96
+      },
+      "comparison": {
+        "CatBoost": {
+          "mae_inr": 43958316.74,
+          "rmse_inr": 100297471.25,
+          "r2_score": -0.1005,
+          "mape_pct": 52.69,
+          "medape_pct": 55.87,
+          "coverage_within_15pct": 12.96
+        },
+        "XGBoost": {
+          "mae_inr": 47496555.64,
+          "rmse_inr": 104463806.95,
+          "r2_score": -0.1938,
+          "mape_pct": 58.38,
+          "medape_pct": 61.68,
+          "coverage_within_15pct": 11.11
+        }
+      }
+    },
+    "rental": {
+      "champion_algorithm": "XGBoost",
+      "training_samples": 138,
+      "holdout_samples": 81,
+      "metrics": {
+        "mae_inr": 27281.09,
+        "rmse_inr": 55536.9,
+        "r2_score": 0.2664,
+        "mape_pct": 39.09,
+        "medape_pct": 32.49,
+        "coverage_within_15pct": 19.75
+      },
+      "comparison": {
+        "CatBoost": {
+          "mae_inr": 30578.81,
+          "rmse_inr": 63456.36,
+          "r2_score": 0.0423,
+          "mape_pct": 39.1,
+          "medape_pct": 35.36,
+          "coverage_within_15pct": 12.35
+        },
+        "XGBoost": {
+          "mae_inr": 27281.09,
+          "rmse_inr": 55536.9,
+          "r2_score": 0.2664,
+          "mape_pct": 39.09,
+          "medape_pct": 32.49,
+          "coverage_within_15pct": 19.75
+        }
+      }
+    }
+  }
+}

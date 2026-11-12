@@ -1,0 +1,15 @@
+{
+  "category": "commercial",
+  "target": "price_inr",
+  "target_transformation": "log1p(price_inr)",
+  "num_features": [
+    "latitude",
+    "longitude",
+    "area_sqft"
+  ],
+  "cat_features": [
+    "state",
+    "commercial_type"
+  ],
+  "total_feature_count": 5
+}
