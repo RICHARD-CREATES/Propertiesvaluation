@@ -83,7 +83,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       >
         <div className="h-12 px-3 flex items-center justify-between border-b border-[var(--border-hairline)]">
           {!collapsed ? (
-            <div className="font-serif text-lg leading-none tracking-tight">PropIntel</div>
+            <div className="font-serif text-lg leading-none tracking-tight">PropAI</div>
           ) : (
             <span className="font-serif text-lg mx-auto">P</span>
           )}
@@ -132,7 +132,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           >
             {mobileMenuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
           </button>
-          <span className="font-serif text-base">PropIntel</span>
+          <span className="font-serif text-base">PropAI</span>
         </div>
         <button
           type="button"

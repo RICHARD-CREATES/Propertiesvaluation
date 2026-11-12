@@ -265,7 +265,7 @@ def _query_overpass_live(lat: float, lon: float) -> Tuple[List[Dict[str, Any]], 
         req = urllib.request.Request(
             "https://overpass-api.de/api/interpreter",
             data=("data=" + urllib.parse.quote(query)).encode("utf-8"),
-            headers={"User-Agent": "PropIntelGeoZoneEngine/2.0"},
+            headers={"User-Agent": "PropAIGeoZoneEngine/2.0"},
         )
         with urllib.request.urlopen(req, timeout=1.8) as resp:
             payload = json.loads(resp.read().decode("utf-8"))

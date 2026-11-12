@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PropIntel Geo-Spatial Valuation Terminal</title>
+  <title>PropAI Geo-Spatial Valuation Terminal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -193,7 +193,7 @@
         </div>
         <div>
           <div class="flex items-center gap-2">
-            <h1 class="font-display text-base sm:text-lg font-bold tracking-tight">PropIntel Atelier</h1>
+            <h1 class="font-display text-base sm:text-lg font-bold tracking-tight">PropAI Atelier</h1>
             <span class="hidden sm:inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold uppercase tracking-[0.14em] border border-hair bg-elev text-sec">Geo-Spatial Appraisal</span>
           </div>
           <p class="hidden sm:block text-[11px] text-sec">Backend Zone Economics &bull; Three-Way Reconciliation &bull; TreeSHAP Telemetry</p>
@@ -1075,13 +1075,13 @@
       const html = document.documentElement;
       const next = html.getAttribute('data-theme') === 'ivory' ? 'obsidian' : 'ivory';
       html.setAttribute('data-theme', next);
-      localStorage.setItem('propintel_theme', next);
+      localStorage.setItem('propai_theme', next);
       const lbl = document.getElementById('theme-toggle-label');
       if (lbl) lbl.innerText = next === 'ivory' ? 'Obsidian Theme' : 'Ivory Theme';
     }
 
     function restoreTheme() {
-      const saved = localStorage.getItem('propintel_theme') || 'obsidian';
+      const saved = localStorage.getItem('propai_theme') || 'obsidian';
       document.documentElement.setAttribute('data-theme', saved);
       const lbl = document.getElementById('theme-toggle-label');
       if (lbl) lbl.innerText = saved === 'ivory' ? 'Obsidian Theme' : 'Ivory Theme';

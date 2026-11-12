@@ -1,15 +1,24 @@
-# Propertiesvaluation — PropIntel AI Property Valuation & Spatial Intelligence Platform
+# Propertiesvaluation — PropAI Property Valuation & Spatial Intelligence Platform
 
 An architectural, evidence-oriented real estate valuation, spatial zone intelligence, rental capitalization, and ground-truth governance platform powered by **FastAPI**, **SQLAlchemy**, **XGBoost / CatBoost**, **TreeSHAP**, **React + TypeScript**, **Three.js / React Three Fiber**, and **MapLibre GL**.
+
+---
+
+## Presentation & Demo Walkthrough
+
+- **Presentation Folder:** [presentation/](presentation/)
+- **Guided Website Demo Video:** [presentation/PropAI_Website_Demo.mp4](presentation/PropAI_Website_Demo.mp4)
+- **Valuation Engine Deep Dive Deck:** [presentation/PropAI_Valuation_Engine_DeepDive.pptx](presentation/PropAI_Valuation_Engine_DeepDive.pptx) ([Markdown Notes](presentation/PropAI_Valuation_Engine_Deep_Dive.md))
+- **E-Cell IIT Bombay Deck:** [presentation/PropAI_ECellIITBombay.pptx](presentation/PropAI_ECellIITBombay.pptx)
 
 ---
 
 ## Visual Proof & Live Verification
 
 ### 1. Standalone 3D Dynamic Architectural Landing Page (`/`)
-Full-screen editorial landing workspace featuring interactive Three.js / React Three Fiber parametric architectural massing (`Standalone Villa · 3F`, `Residential Tower · 8F`, `Commercial Core · 5F`), real-time parcel & height callouts (`H: 9.3m · 3F · 2,600 sqft`, `PARCEL ~49 ft × 49 ft`), Obsidian/Ivory theme switcher, and direct entry into the appraisal terminal.
+Full-screen editorial landing workspace featuring interactive Three.js / React Three Fiber parametric architectural massing (`Standalone Villa · 3F`, `Residential Tower · 8F`, `Commercial Core · 5F`), real-time parcel & height callouts (`H: 9.3m · 3F · 2,600 sqft`, `PARCEL ~49 ft × 49 ft`), Obsidian/Stone theme switcher, full parameter & 7-cluster explorer, and direct entry into the appraisal terminal.
 
-![PropIntel 3D Landing Hero](docs/proof/01_landing_3d_hero.png)
+![PropAI 3D Landing Hero](docs/proof/01_landing_3d_hero.png)
 
 ### 2. Gamified 8-Step Property & Micro-Market Gate Quiz
 Replaced static multi-field forms with an interactive 8-step quiz (`Q1 · Asset Classification & Form` through environment gates and profile inputs) paired with live gate verification (`GATES CLEARED 4/4`) and progress tracking.

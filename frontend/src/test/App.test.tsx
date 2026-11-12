@@ -64,7 +64,7 @@ const MOCK_ZONES = {
   },
 };
 
-describe('PropIntel Architectural Frontend Workflows', () => {
+describe('PropAI Architectural Frontend Workflows', () => {
   beforeEach(() => {
     vi.stubGlobal(
       'fetch',

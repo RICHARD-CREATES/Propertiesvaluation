@@ -217,7 +217,7 @@ export function OverviewPage() {
       <header className="sticky top-0 z-30 backdrop-blur-md bg-[var(--bg-canvas)]/90 border-b border-[var(--border-hairline)]">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-8 h-16 flex items-center justify-between gap-4">
           <div className="flex items-center gap-3 shrink-0">
-            <span className="font-serif text-xl tracking-tight whitespace-nowrap">PropIntel</span>
+            <span className="font-serif text-xl tracking-tight whitespace-nowrap">PropAI</span>
             <span className="hidden lg:inline-block tech-label whitespace-nowrap px-2 py-0.5 border border-[var(--border-hairline)] bg-[var(--bg-surface)]">
               SPATIAL VALUATION STUDIO
             </span>

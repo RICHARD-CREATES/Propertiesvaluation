@@ -37,7 +37,7 @@ _SEED_DATA_DIR = BASE_DIR / "data"
 if os.environ.get("VERCEL"):
     import shutil
 
-    DATA_DIR = Path("/tmp") / "propintel_data"
+    DATA_DIR = Path("/tmp") / "propai_data"
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     _seed_db = _SEED_DATA_DIR / "rental_intelligence.db"
     _tmp_db = DATA_DIR / "rental_intelligence.db"

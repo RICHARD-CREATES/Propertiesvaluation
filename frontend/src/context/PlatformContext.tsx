@@ -80,7 +80,10 @@ const PlatformContext = createContext<PlatformContextValue | null>(null);
 export function PlatformProvider({ children }: { children: React.ReactNode }) {
   const [route, setRoute] = useState<WorkspaceRoute>('overview');
   const [theme, setTheme] = useState<'obsidian' | 'stone'>(() => {
-    const saved = typeof window !== 'undefined' ? window.localStorage.getItem('propintel_theme') : null;
+    const saved =
+      typeof window !== 'undefined'
+        ? window.localStorage.getItem('propai_theme') || window.localStorage.getItem('propintel_theme')
+        : null;
     return saved === 'stone' ? 'stone' : 'obsidian';
   });
   const [config, setConfig] = useState<PlatformConfigResponse | null>(null);
@@ -105,7 +108,7 @@ export function PlatformProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
-    window.localStorage.setItem('propintel_theme', theme);
+    window.localStorage.setItem('propai_theme', theme);
   }, [theme]);
 
   const toggleTheme = useCallback(() => {
